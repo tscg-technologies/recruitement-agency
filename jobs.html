@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Jobs - RECRUITMENT AGENCY</title>
+  <meta name="description" content="Browse verified job openings across Information Technology, Finance, Engineering, Healthcare, and Operations in India. Filter by location, role, and salary.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="RECRUITMENT AGENCY Home">
+        <span class="brand-logo-mark">RA</span>
+        <span class="brand-logo-text">RECRUITMENT <span>AGENCY</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation (ONLY 4 MAIN VISIBLE ITEMS) -->
+      <div class="nav-backdrop"></div>
+      <nav class="nav-container" aria-label="Main Navigation">
+        <ul class="main-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Recruitment Services
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="employers.html" class="dropdown-link">Employer Solutions</a></li>
+              <li class="dropdown-item"><a href="services.html#executive-search" class="dropdown-link">Executive Search</a></li>
+              <li class="dropdown-item"><a href="services.html#permanent-recruitment" class="dropdown-link">Permanent Recruitment</a></li>
+              <li class="dropdown-item"><a href="services.html#contract-staffing" class="dropdown-link">Contract Staffing</a></li>
+              <li class="dropdown-item"><a href="services.html#recruitment-process" class="dropdown-link">Recruitment Process</a></li>
+              <li class="dropdown-item"><a href="services.html#industries-we-serve" class="dropdown-link">Industries We Serve</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button type="button" class="nav-link dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
+              Careers & Resources
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="jobs.html" class="dropdown-link active">Browse Jobs</a></li>
+              <li class="dropdown-item"><a href="job-details.html" class="dropdown-link">Job Details</a></li>
+              <li class="dropdown-item"><a href="resources.html" class="dropdown-link">Career Resources</a></li>
+              <li class="dropdown-item"><a href="resume-tips.html" class="dropdown-link">Resume Tips</a></li>
+              <li class="dropdown-item"><a href="interview-preparation.html" class="dropdown-link">Interview Preparation</a></li>
+              <li class="dropdown-item"><a href="contact.html#candidate-registration" class="dropdown-link">Candidate Registration</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="employers.html" class="btn btn-primary header-hire-btn">Hire Talent</a>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Header Banner -->
+    <section class="section-padding bg-soft-sky" style="padding-top: 3.5rem; padding-bottom: 3.5rem; border-bottom: 1px solid var(--border-color);">
+      <div class="container text-center">
+        <span class="section-badge">Opportunities</span>
+        <h1 class="hero-title" style="margin-bottom: 0.85rem;">Browse Open Job Positions</h1>
+        <p class="section-desc" style="max-width: 680px; margin: 0 auto;">
+          Discover verified vacancies with leading corporate employers in India. Filter by keyword, industry, location, employment type, and salary.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter & Listings Section -->
+    <section class="section-padding bg-light-grey">
+      <div class="container">
+
+        <!-- Filter Panel -->
+        <div class="jobs-filter-panel">
+          <form id="jobs-filter-form" novalidate>
+            <div class="filter-grid-5">
+
+              <!-- 1. Search Bar -->
+              <div class="form-group mb-0">
+                <label for="filter-keyword">Search Keyword / Role</label>
+                <input type="text" id="filter-keyword" class="form-control" placeholder="e.g. Frontend, Tester, HR, Sales...">
+              </div>
+
+              <!-- 2. Location Filter -->
+              <div class="form-group mb-0">
+                <label for="filter-location">Location</label>
+                <select id="filter-location" class="form-control">
+                  <option value="all">All Locations</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Delhi NCR">Delhi NCR</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Remote">Remote</option>
+                </select>
+              </div>
+
+              <!-- 3. Industry Filter -->
+              <div class="form-group mb-0">
+                <label for="filter-industry">Industry Domain</label>
+                <select id="filter-industry" class="form-control">
+                  <option value="all">All Industries</option>
+                  <option value="Information Technology">Information Technology</option>
+                  <option value="Banking and Finance">Banking and Finance</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="Sales and Marketing">Sales and Marketing</option>
+                  <option value="Engineering">Engineering</option>
+                  <option value="Human Resources">Human Resources</option>
+                  <option value="Operations">Operations</option>
+                </select>
+              </div>
+
+              <!-- 4. Employment Type Filter -->
+              <div class="form-group mb-0">
+                <label for="filter-type">Employment Type</label>
+                <select id="filter-type" class="form-control">
+                  <option value="all">All Types</option>
+                  <option value="Full-Time">Full-Time</option>
+                  <option value="Contract">Contract</option>
+                </select>
+              </div>
+
+              <!-- 5. Salary Range Filter -->
+              <div class="form-group mb-0">
+                <label for="filter-salary">Illustrative Salary</label>
+                <select id="filter-salary" class="form-control">
+                  <option value="all">Any Salary</option>
+                  <option value="0-6">Up to ₹6 LPA</option>
+                  <option value="6-10">₹6 LPA - ₹10 LPA</option>
+                  <option value="10-20">₹10 LPA - ₹20 LPA</option>
+                  <option value="20+">₹20+ LPA (Executive)</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; margin-top: 1.25rem;">
+              <button type="button" id="clear-all-filters" class="btn btn-outline btn-sm">Clear All Filters ✕</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Count Strip -->
+        <div class="jobs-count-strip">
+          <span id="jobs-count-display" class="font-semibold text-navy">Loading opportunities...</span>
+          <span class="text-xs text-muted">All positions represent fictional portfolio demonstrations</span>
+        </div>
+
+        <!-- Job Cards Container (Populated dynamically via js/jobs.js) -->
+        <div id="jobs-list-container" class="grid-3">
+          <!-- Fallback initial card -->
+          <article class="job-card">
+            <div class="job-card-header">
+              <span class="badge badge-industry">Information Technology</span>
+              <span class="job-posted-time">1 day ago</span>
+            </div>
+            <h3 class="job-card-title"><a href="job-details.html?id=frontend-developer-01">Frontend Developer</a></h3>
+            <p class="job-card-employer">Demo Employer - Digital Solutions</p>
+            <div class="job-card-meta">
+              <div class="meta-item"><span>Hyderabad, Telangana</span></div>
+              <div class="meta-item meta-salary"><span>₹8,00,000 - ₹13,00,000 P.A.</span></div>
+            </div>
+            <p class="job-card-summary">Develop responsive, accessible, and high-performance user interfaces.</p>
+            <div class="job-card-footer">
+              <a href="job-details.html?id=frontend-developer-01" class="btn btn-outline btn-sm">View Details</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Candidate Registration Banner -->
+    <section class="section-padding bg-white">
+      <div class="container text-center">
+        <div class="card bg-soft-sky p-5" style="border-radius: var(--radius-lg); border: 1px solid var(--soft-sky-border);">
+          <span class="section-badge">Can't Find a Match?</span>
+          <h2 class="section-title">Submit Your Profile to Our Talent Community</h2>
+          <p class="section-desc" style="max-width: 600px; margin: 0 auto 2rem auto;">
+            Our recruitment consultants review resumes daily for unadvertised confidential search mandates. Register your details and resume today at zero fee.
+          </p>
+          <a href="contact.html#candidate-registration" class="btn btn-primary btn-lg">Complete Candidate Registration</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-logo-mark">RA</span>
+            <span class="brand-logo-text">RECRUITMENT <span>AGENCY</span></span>
+          </a>
+          <p class="footer-desc">
+            A premier recruitment and talent acquisition consultancy in India connecting visionary organizations with high-caliber talent across multiple domains.
+          </p>
+          <div class="footer-disclaimer-badge">
+            Portfolio Demonstration Website • All Data Fictional
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="employers.html">Employer Solutions</a></li>
+            <li><a href="jobs.html">Browse Jobs</a></li>
+            <li><a href="resources.html">Career Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#permanent-recruitment">Permanent Recruitment</a></li>
+            <li><a href="services.html#contract-staffing">Contract Staffing</a></li>
+            <li><a href="services.html#executive-search">Executive Search</a></li>
+            <li><a href="services.html#it-recruitment">IT Recruitment</a></li>
+            <li><a href="services.html#bulk-hiring">Bulk Hiring</a></li>
+            <li><a href="services.html#rpo">Recruitment Process Outsourcing</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact Details (Demo)</h4>
+          <ul class="footer-contact-info">
+            <li class="footer-contact-item">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Demo Corporate Tower, Hitec City, Hyderabad, Telangana 500081, India</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 90000 00000</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>demo@example.com</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Mon - Fri: 9:00 AM - 6:00 PM IST</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 RECRUITMENT AGENCY. All rights reserved. This is a fictional demonstration portfolio website. All trademarks and details belong to their respective demonstrative contexts.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/jobs.js"></script>
+</body>
+</html>

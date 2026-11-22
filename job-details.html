@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Details - RECRUITMENT AGENCY</title>
+  <meta name="description" content="View comprehensive job details, responsibilities, required skills, and qualification guidelines for verified positions in India.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="RECRUITMENT AGENCY Home">
+        <span class="brand-logo-mark">RA</span>
+        <span class="brand-logo-text">RECRUITMENT <span>AGENCY</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation (ONLY 4 MAIN VISIBLE ITEMS) -->
+      <div class="nav-backdrop"></div>
+      <nav class="nav-container" aria-label="Main Navigation">
+        <ul class="main-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              Recruitment Services
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="employers.html" class="dropdown-link">Employer Solutions</a></li>
+              <li class="dropdown-item"><a href="services.html#executive-search" class="dropdown-link">Executive Search</a></li>
+              <li class="dropdown-item"><a href="services.html#permanent-recruitment" class="dropdown-link">Permanent Recruitment</a></li>
+              <li class="dropdown-item"><a href="services.html#contract-staffing" class="dropdown-link">Contract Staffing</a></li>
+              <li class="dropdown-item"><a href="services.html#recruitment-process" class="dropdown-link">Recruitment Process</a></li>
+              <li class="dropdown-item"><a href="services.html#industries-we-serve" class="dropdown-link">Industries We Serve</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button type="button" class="nav-link dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
+              Careers & Resources
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="jobs.html" class="dropdown-link">Browse Jobs</a></li>
+              <li class="dropdown-item"><a href="job-details.html" class="dropdown-link active">Job Details</a></li>
+              <li class="dropdown-item"><a href="resources.html" class="dropdown-link">Career Resources</a></li>
+              <li class="dropdown-item"><a href="resume-tips.html" class="dropdown-link">Resume Tips</a></li>
+              <li class="dropdown-item"><a href="interview-preparation.html" class="dropdown-link">Interview Preparation</a></li>
+              <li class="dropdown-item"><a href="contact.html#candidate-registration" class="dropdown-link">Candidate Registration</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="employers.html" class="btn btn-primary header-hire-btn">Hire Talent</a>
+        <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb Bar -->
+    <nav aria-label="Breadcrumb" class="bg-light-grey" style="border-bottom: 1px solid var(--border-color); padding: 0.85rem 0;">
+      <div class="container text-sm">
+        <a href="index.html">Home</a> &gt; 
+        <a href="jobs.html">Browse Jobs</a> &gt; 
+        <span class="text-muted">Job Details</span>
+      </div>
+    </nav>
+
+    <!-- Main Container Rendered dynamically by js/jobs.js based on ?id= query param -->
+    <section class="section-padding bg-light-grey">
+      <div class="container" id="job-details-content">
+
+        <!-- Default initial placeholder if JS is loading -->
+        <div class="card p-5 text-center">
+          <p class="text-muted">Loading position details from verified recruitment records...</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-logo-mark">RA</span>
+            <span class="brand-logo-text">RECRUITMENT <span>AGENCY</span></span>
+          </a>
+          <p class="footer-desc">
+            A premier recruitment and talent acquisition consultancy in India connecting visionary organizations with high-caliber talent across multiple domains.
+          </p>
+          <div class="footer-disclaimer-badge">
+            Portfolio Demonstration Website • All Data Fictional
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="employers.html">Employer Solutions</a></li>
+            <li><a href="jobs.html">Browse Jobs</a></li>
+            <li><a href="resources.html">Career Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#permanent-recruitment">Permanent Recruitment</a></li>
+            <li><a href="services.html#contract-staffing">Contract Staffing</a></li>
+            <li><a href="services.html#executive-search">Executive Search</a></li>
+            <li><a href="services.html#it-recruitment">IT Recruitment</a></li>
+            <li><a href="services.html#bulk-hiring">Bulk Hiring</a></li>
+            <li><a href="services.html#rpo">Recruitment Process Outsourcing</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact Details (Demo)</h4>
+          <ul class="footer-contact-info">
+            <li class="footer-contact-item">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Demo Corporate Tower, Hitec City, Hyderabad, Telangana 500081, India</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 90000 00000</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>demo@example.com</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Mon - Fri: 9:00 AM - 6:00 PM IST</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 RECRUITMENT AGENCY. All rights reserved. This is a fictional demonstration portfolio website. All trademarks and details belong to their respective demonstrative contexts.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/jobs.js"></script>
+</body>
+</html>
